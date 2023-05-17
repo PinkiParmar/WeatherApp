@@ -40,13 +40,11 @@ export default function Weather(){
             <input type="text" name="country" placeholder="country" onChange={e=>handleChange(e)}/>
             <button className="getWeather" type="submit">submit</button>
         </form>
-        {
-            (weather?.name) ?
+        {(weather?.name) ?
             <div>
                 <DisplayWeather data={weather} />
             </div>
-            :null
-        }
+            :null}
     
     </div>
     </>)
