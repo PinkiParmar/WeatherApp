@@ -42,7 +42,6 @@ export default function Weather(){
         </form>
         {
             (weather?.name) ?
-            
             <div>
                 <DisplayWeather data={weather} />
             </div>
